@@ -6,7 +6,7 @@
 - These prizes are actually distributed to 35 Winners that I grouped into 5 regions    
 I think this is a nice subject to be investigated in IRIS.    
 And the numbers are small enough to follow easily.  
-<img width="35%" src="https://community.intersystems.com/sites/default/files/inline/images/mn2.jpg">   
+<img width="45%" src="https://community.intersystems.com/sites/default/files/inline/images/mn2.jpg">   
 
 ### Implementation   
 - **B** is the Winner Table: It holds the region and a numeric as ID. Short name is left empty for privacy protection in this Demo
@@ -46,7 +46,7 @@ docker-compose up -d --build
 ```
 docker-compose exec iris iris session iris
 ```
-**[or use Online Demo](https://dataset-oex-reviews.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :**
+[or use Online Demo](https://dataset-oex-reviews.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :
 
 ```
 USER>do ##class(dc.rcc.Main).Menue()
@@ -54,14 +54,14 @@ USER>do ##class(dc.rcc.Main).Menue()
 Welcome to OEX Contest Statistics
 Select Contests, Prizes, Winners, Assign, Statistics, eXit (C,P,W,A,S,X) :
 ```
-***C**ontests, **P**rizes, **W**inners*  have the same maintenance functions and show the    
+**Contests, Prizes, Winners**  have the same maintenance functions and show the    
 data status before and after processing.
 ```
 Contest List, Edit, New, Delete, eXit (L,E,N,D,X) :
 Prizes List, Edit, New, Delete, eXit (L,E,N,D,X) :
 Winners List, Edit, New, Delete, eXit (L,E,N,D,X) :
 ```
-***L**ist, **E**dit, **D**elete* ask for additional IDs of the records processed.     
+**List, Edit, Delete** ask for additional IDs of the records processed.     
 A typical EDIT sequence for the actual Contest:  
 ```
 Select Contests, Prizes, Winners, Assign, Statistics, eXit (C,P,W,A,S,X) :c
@@ -85,7 +85,7 @@ ID      Start_Date      End_Date        Title
 
 1 Rows(s) Affected
 ```
-***A**ssign* also allows Remove or (implicitly) Overload assignment of a prize.
+**Assign** also allows Remove or (implicitly) Overload assignment of a prize.
 ```
 Select Contests, Prizes, Winners, Assign, Statistics, eXit (C,P,W,A,S,X) :A
 Assign or Remove Winner (A,R) :a
@@ -119,7 +119,7 @@ ID      Cat     Rank    Value   WinrID  Short   Title
 1 Rows(s) Affected
 Contest ID :
 ```
-***S**tatistics* is a collection of pre-composed queries.     
+**Statistics** is a collection of pre-composed queries.     
 You can always select the Category displayed:  (C=Community, X=eXperts, * =All)    
 In order to inspire you for your own queries, you can also display the SQL statement used.    
 ```
@@ -153,7 +153,7 @@ Cat     Prizes  Value   Region
       ) WHERE val>1 AND NOT Region IS NULL
       GROUP BY Region ORDER BY 3 DESC
 ```
-or   
+**or**   
 ```
 Prepared Statistics
  1 - Total prizes by contest
