@@ -9,7 +9,8 @@ And the numbers are small enough to follow easily.
 <img width="45%" src="https://community.intersystems.com/sites/default/files/inline/images/mn2.jpg">   
 
 ### Implementation   
-- **B** is the Winner Table: It holds the region and a numeric as ID. Short name is left empty for privacy protection in this Demo
+- **B** is the Winner Table: It holds the region and a numeric as ID.    
+    Short name is left empty for privacy protection in this Demo
 - **A** is the table of all contests with dates
 - **X,C** are the arrays of prizes. They are projected as SQL tables.   When assigned they refer to 1 winner
 
