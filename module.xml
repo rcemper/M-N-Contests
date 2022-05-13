@@ -8,7 +8,8 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="dc.rcc.PKG"/>
-      <Resource Name="m-n-contest.GBL"/>
+      <Resource Name="dc.rcc.ContestD.GBL"/>
+      <Resource Name="dc.rcc.WinnerD.GBL"/>
       <Author>
     	<Person>Robert C. Cemper</Person>
 	<CopyrightDate>2022</CopyrightDate>
