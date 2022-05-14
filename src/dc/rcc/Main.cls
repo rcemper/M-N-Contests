@@ -3,7 +3,7 @@ Class dc.rcc.Main [ Not ProcedureBlock ]
 
 ClassMethod Menue()
 {
-  Write #,"Welcome to OEX Contest Statistics",!
+  Write #!!,"Welcome to OEX Contest Statistics",!
 m Read !,"Select Contests, Prizes, Winners, Assign, Statistics, eXit (C,P,W,A,S,X) :",m#1,!
   set m=$ZCVT(m,"U")
   Do $case(m  ,"C":..Con()
