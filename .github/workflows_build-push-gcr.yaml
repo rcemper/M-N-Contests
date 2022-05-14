@@ -8,9 +8,9 @@ on:
 
 env:
   # Change this section according to your needs
-  IMAGE_NAME:   jdate
-  SERVICE:      jdate
-  DOMAIN_NAME:  jdate.demo.community.intersystems.com
+  IMAGE_NAME:   m-n-contest
+  SERVICE:      m-n-contest
+  DOMAIN_NAME:  m-n-contest.demo.community.intersystems.com
 # Leave this section untouched
   PROJECT_ID:   iris-community-demos
   CLUSTER_NAME: demo
