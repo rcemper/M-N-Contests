@@ -192,10 +192,12 @@ Cat     Contest Best    Winner  Value   ConCnt  ContestList - - - - - - - - - - 
 ```
 
 [Article #1 on DC](https://community.intersystems.com/post/mn-contest-1)    
-[Article #2 on DC](https://community.intersystems.com/post/mn-contest-2)     
+[Article #2 on DC](https://community.intersystems.com/post/mn-contest-2)
 
-[Demo Server SMP](https://jdate.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://jdate.demo.community.intersystems.com/terminal/)    
+[Demo Video](https://youtu.be/Q0MKr75xAQI)
+
+[Demo Server SMP](https://m-n-contest.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://m-n-contest.demo.community.intersystems.com/terminal/)    
         
 **Code Quality**   
 <img width="85%" src="https://community.intersystems.com/sites/default/files/inline/images/images/image(3871).png">   
