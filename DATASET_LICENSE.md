@@ -1,5 +1,5 @@
 ### Data Source
-This dataset is based on the content of [InterSystems Open Exchange](https://openexchange.intersystems.com/)
+This dataset is based on the content of [InterSystems Open Exchange](https://openexchange.intersystems.com/)    
 and related articles in [InterSystems Developer Community](https://community.intersystems.com/)   
 at the time of taking the snapshot in Dec.2021    
 The dataset is my personal research the history ov programming Contestse.    
