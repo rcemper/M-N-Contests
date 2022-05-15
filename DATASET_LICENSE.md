@@ -1,7 +1,7 @@
 ### Data Source
 This dataset is based on the content of [InterSystems Open Exchange](https://openexchange.intersystems.com/)    
 and related articles in [InterSystems Developer Community](https://community.intersystems.com/)   
-at the time of taking the snapshot in Dec.2021    
+at the time of taking the snapshot in May 2022.    
 The dataset is my personal research the history of 23 programming Contests.    
 All data are resulting from the analysis of the OEX web pages.    
 Personal names of authors and Winners are scrambled for this collection.   
