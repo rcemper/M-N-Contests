@@ -188,7 +188,7 @@ Cat     Contest Best    Winner  Value   ConCnt  ContestList - - - - - - - - - - 
   C      22     3       as||4   625       1     22                                              3
 
 19 Rows(s) Affected
-     Show SQL Statement (YN) [N] :
+     Show SQL Statement (YN) [N] :    
 ```
 ### Version 0.0.2
 Improve statistic #5    
