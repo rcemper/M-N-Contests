@@ -1,6 +1,5 @@
 Class dc.rcc.Main [ Not ProcedureBlock ]
 {
-
 ClassMethod Menue()
 {
   Write #!!,"Welcome to OEX Contest Statistics",!
