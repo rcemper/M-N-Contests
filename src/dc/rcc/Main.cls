@@ -408,14 +408,13 @@ s1
   Set sql=0
      ,sql($i(sql))="SELECT LPAD(Cat,3) Cat ,"
      ,sql($i(sql))="LPAD(Contest,3) Contest, Best, Winner, Value, LPAD(CCnt,3) ConCnt,"
-     ,sql($i(sql))="RPAD(CL,40) ""ContestList - - - - - - - - - - - - - - "", RankList "
+     ,sql($i(sql))=" RankList ""Rank in Contest:  |10 _ _ _ _ 15 _ _ _ _|20 _ _ _ _ 25"""
      ,sql($i(sql))=" FROM ( SELECT "
      ,sql($i(sql))="MIN(Contest) Contest, "
      ,s1=sql
      ,sql($i(sql))="MIN(element_key) Best, "
      ,sql($i(sql))="COUNT(*) CCnt, "
-     ,sql($i(sql))="LIST(Contest) CL, "
-     ,sql($i(sql))="LIST(element_key) RankList, "
+     ,sql($i(sql))="dc_rcc.RANKING(LIST(Contest),LIST(element_key)) as RankList, "
      ,s2=sql
   If "C*"[cat {
     Set sql($i(sql))="C_Winner Winner, 'C' Cat, " 
@@ -432,9 +431,21 @@ s1
        ,sql($i(sql))="FROM dc_rcc.Contest_X WHERE X_Value>1 GROUP BY X_Winner "
     } 
   Set sql($i(sql))=") WHERE NOT Winner IS NULL "
-     ,sql($i(sql))="ORDER BY 2, 1 DESC, 3 , 5 DESC"
-       
-  Quit
+     ,sql($i(sql))="ORDER BY 2, 1 DESC, 3 , 5 DESC"     
+  Quit  
 }
-
+ClassMethod Ranking(
+	contest As %String(MAXLEN=""),
+	rank As %String(MAXLEN="")) As %String(MAXLEN="") [ SqlName = RANKING, SqlProc ]
+{
+  set tabs=^dc.rcc.ContestD
+  set $p(t,".,",tabs+3)="*"
+  set tab=$lfs(t)
+  set $li(tab,10)="|"
+  set $li(tab,21)="|"
+  set rk=$lfs(rank)
+  set con=$lfs(contest) 
+  for p=1:1:$ll(con) set c=$li(con,p),c=c\10+c,$li(tab,c)=$lg(rk,p)
+  quit $lts(tab)
+}
 }
