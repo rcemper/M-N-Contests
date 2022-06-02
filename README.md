@@ -190,6 +190,9 @@ Cat     Contest Best    Winner  Value   ConCnt  ContestList - - - - - - - - - - 
 19 Rows(s) Affected
      Show SQL Statement (YN) [N] :
 ```
+### Version 0.0.2
+Improve statistic #5    
+<img width="80%" src="https://community.intersystems.com/sites/default/files/inline/images/images/image(3944).png"> 
 
 [Article #1 on DC](https://community.intersystems.com/post/mn-contest-1)    
 [Article #2 on DC](https://community.intersystems.com/post/mn-contest-2)
