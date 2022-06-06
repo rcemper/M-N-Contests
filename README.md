@@ -47,7 +47,7 @@ docker-compose up -d --build
 ```
 docker-compose exec iris iris session iris
 ```
-[or use Online Demo](https://dataset-oex-reviews.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :
+[or use Online Demo](https://m-n-contest.demo.community.intersystems.com/terminal/) :
 
 ```
 USER>do ##class(dc.rcc.Main).Menue()
